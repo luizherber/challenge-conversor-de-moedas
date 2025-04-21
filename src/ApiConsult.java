@@ -12,13 +12,10 @@ public class ApiConsult {
         String apiAddress = "https://v6.exchangerate-api.com/v6/";
         String apiKey = "d47b7b53cd26e442b490a909";
         String apiComplement = "/pair/";
-        String apiOriginCoin = originCoin;
-        String apiDestinyCoin = destinyCoin;
-        double apiAmountCoin = amountCoin;
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(apiAddress + apiKey + apiComplement + apiOriginCoin + "/" + apiDestinyCoin + "/" + apiAmountCoin))
+                .uri(URI.create(apiAddress + apiKey + apiComplement + originCoin + "/" + destinyCoin + "/" + amountCoin))
                 .build();
 
         try {
