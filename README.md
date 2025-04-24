@@ -31,12 +31,12 @@ Execute:
 
     java Main
 
-    Requer: Java 11+
+    Requer: Java 17+
     Dica: use uma IDE como IntelliJ ou VSCode com extensão Java para facilitar.
 
 🛠️ Tecnologias utilizadas
 
-    Java 11
+    Java 17
 
     HttpClient (Java padrão)
 
