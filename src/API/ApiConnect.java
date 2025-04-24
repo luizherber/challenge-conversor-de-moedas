@@ -1,3 +1,5 @@
+package API;
+
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -6,7 +8,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class ApiConsult {
+public class ApiConnect {
 
     public String apiConnection (String originCoin, String destinyCoin, double amountCoin) {
         String apiAddress = "https://v6.exchangerate-api.com/v6/";
@@ -26,8 +28,9 @@ public class ApiConsult {
 
             JsonObject jsonObject = JsonParser.parseString(json).getAsJsonObject();
             double result = jsonObject.get("conversion_result").getAsDouble();
+            double rate = jsonObject.get("conversion_rate").getAsDouble();
 
-            return String.valueOf(result);
+            return String.format("%.2f@%.2f", result, rate);
 
         } catch (Exception e) {
             e.printStackTrace();
