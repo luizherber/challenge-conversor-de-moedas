@@ -66,5 +66,5 @@ Sinta-se livre para usar, modificar e contribuir!
 Feito com ☕ por Luiz Herber
 🏷️ Tags
 
-#java #api #conversor #moedas #projeto-estudo
-#httpclient #json #terminal-app #javadev #gson #openapi
+`#java` `#api` `#conversor` `#moedas` `#projeto-estudo`
+`#httpclient` `#json` `#terminal-app` `#javadev` `#gson` `#openapi`
